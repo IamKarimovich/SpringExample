@@ -1,0 +1,53 @@
+package com.example.annotatedComponentScan.componentScan;
+
+import org.springframework.stereotype.Component;
+
+@Component("employeeBean")
+public class Employee {
+    private int employeeId;
+    private String firstName;
+    private String lastName;
+    private Long employeeSalary;
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Long getEmployeeSalary() {
+        return employeeSalary;
+    }
+
+    public void setEmployeeSalary(Long employeeSalary) {
+        this.employeeSalary = employeeSalary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeId=" + employeeId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", employeeSalary=" + employeeSalary +
+                '}';
+    }
+}
